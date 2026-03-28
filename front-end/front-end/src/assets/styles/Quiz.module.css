@@ -1,0 +1,126 @@
+.quizContainer {
+    background-color: #000000; /* Dark background */
+    color: #ffffff;
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quizContainer h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #1ecf0b; /* Accent color for the title */
+}
+
+.resultContainer {
+    background: linear-gradient(45deg, #3C1C78, #000000);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.5s ease-in-out;
+    margin-top: 20px;
+}
+
+.resultContainer h2 {
+    color: #00FF7F; /* Vibrant green for success */
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.resultContainer p {
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+.quizForm {
+    width: 100%;
+    max-width: 600px;
+    background-color: #16013E;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.questionContainer {
+    margin-bottom: 20px;
+}
+
+.questionText {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.customSelect {
+    position: relative;
+    display: block;
+    max-width: 400px;
+    min-width: 180px;
+    margin: 0 auto 20px;
+    border: 1px solid #3C1C78;
+    background-color: #16013E;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.customSelect select {
+    border: none;
+    outline: none;
+    background: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 14px;
+    color: #714BB9;
+    cursor: pointer;
+}
+
+.customSelect::after {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    content: '▼';
+    color: #714BB9;
+    font-size: 18px;
+    pointer-events: none;
+}
+
+.submitButton {
+    background-color: #4caf50;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.submitButton:hover {
+    background-color: #388e3c;
+}
+
+.error {
+    color: #f44336;
+    font-size: 1rem;
+    margin-top: 20px;
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

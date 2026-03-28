@@ -1,0 +1,144 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  background-color: #121212; /* Dark mode background */
+  color: #ffffff; /* Light text */
+  font-family: Arial, sans-serif;
+  min-height: 100vh; /* Ensure the body takes full viewport height */
+}
+
+/* Header Styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem; /* Adjusted padding for better spacing */
+  background-color: #000000; /* Consistent dark background */
+  border-bottom: 1px solid #000000; /* Optional border for header separation */
+}
+
+.logo img {
+  width: 90px;
+  animation: pulse 2s infinite ease-in-out; /* Animated pulse effect */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem; /* Spacing between links */
+  padding-left: 95px;
+}
+
+nav ul li a {
+  color: #fafafa;
+  text-decoration: none; /* Remove default underline */
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #118907; /* Hover effect */
+}
+.auth-box {
+  display: flex;
+  gap: 1rem; /* Spacing between Login and Sign Up */
+}
+
+.auth-link {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 45px; /* Match the rounded effect */
+  background-color: #ffffff; /* Button background */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+  transition: all 0.3s ease 0s; /* Smooth transition */
+  cursor: pointer;
+}
+
+.auth-link:hover {
+  background-color: #118907; /* Hover background color (similar to .cta-button) */
+  box-shadow: 0px 15px 20px rgba(28, 235, 5, 0.4); /* Hover shadow */
+  transform: translateY(-7px); /* Hover effect */
+  color: #fff; /* Ensure text color changes to white */
+}
+
+.auth-link:active {
+  transform: translateY(-1px); /* Active click effect */
+}
+
+
+/* Hero Section */
+.hero {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #000000; /* Match body background */
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;  /* Add this line */
+}
+
+.cta-button:hover {
+  background-color: #118907;
+  box-shadow: 0px 15px 20px rgba(14, 152, 4, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+.cta-button:active {
+  transform: translateY(-1px);
+}
+/* About Section */
+.about {
+  padding: 4rem 2rem; /* Adjust spacing for visual harmony */
+  text-align: center;
+  background-color: #000000; /* Match dark background */
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about p {
+  line-height: 1.6; /* Improve text readability */
+  color: #ffffff; /* Softer text color */
+}
+
+/* Footer Styling */
+.footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #000000; /* Match header background color */
+}
+
+
+

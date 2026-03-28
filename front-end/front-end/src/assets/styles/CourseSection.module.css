@@ -1,0 +1,87 @@
+/* CourseSection.module.css */
+
+/* Container Styles */
+.courses-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+
+.course-box img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+/* Header Styles */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    color: #E0E0E0; /* Light text color */
+}
+
+.available-courses {
+    font-size: 1.8rem;
+    color: #BB86FC; /* Light purple */
+}
+
+.back-to-home {
+    color: #BB86FC;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.back-to-home:hover {
+    text-decoration: underline;
+}
+
+/* Course Box */
+.course-box {
+    background-color: #1E1E1E;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden; /* Prevent content spill */
+}
+
+.course-box:hover {
+    transform: translateY(-5px);
+}
+
+
+
+.course-box h3 {
+    font-size: 1rem;
+    margin: 10px;
+    color: #E0E0E0;
+}
+
+.course-box .description {
+    font-size: 0.85rem;
+    margin: 10px;
+    color: #B0B0B0;
+}
+
+.enroll-btn {
+    display: block;
+    margin: 10px auto;
+    background-color: #BB86FC;
+    color: #121212;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.enroll-btn:hover {
+    background-color: #9F67D2;
+}
